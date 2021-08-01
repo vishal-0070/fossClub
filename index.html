@@ -10,14 +10,19 @@
     <link rel="stylesheet" href="utils.css">
 </head>
 <body>
-    <nav class="navigation">
+    <!-- <nav class="navigation">
         <div class="nav-left ">
             
            <div class="logo ">
-               fossClub
+               foss Club
            </div>
-        <ul>
-            <li> <a href="./index.html">HOME</a></li>
+          
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li> <a  class="active" href="./index.html">HOME</a></li>
             <li> <a href="ABOUT#">ABOUT</a></li>
             <li> <a href="./contact.html">CONTACT</a></li>
 
@@ -30,7 +35,63 @@
             <button class="sbtn btn-danger">Search</button>
         </form>
         </div>
-    </nav>
+        </div> 
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="logo" href="#">fossClub</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Topic
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Technology</a></li>
+                    <li><a class="dropdown-item" href="#">Web development</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Support</a></li>
+                    <li><a class="dropdown-item" href="#">Write for us</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+            </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+             
+
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-lighter" id="btns"  type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
 
 
@@ -50,22 +111,22 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Welcome to fossClub</h2>
                     <p>Technology News, Development and Trends</p>
-                    <button class="btn btn-danger">Technology</button>
-                    <button class="btn btn-danger">Web Development</button>
-                    <button class="btn btn-danger">Tech Fun</button>
+                    <button class="btn btn-danger">Projects</button>
+                    <button class="btn btn-danger">Get ready with your website</button>
+                    <button class="btn btn-danger">Tech News</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="img1.png" class="d-block w-100" alt="..." width="1400" height="750">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block " id="slide2">
                     <div class= "font-color">
                     <h2>Welcome to best fossClub
                     </h2>
                     <p>Technology News, Development and Trends</p>
                 </div>
-                    <button class="btn btn-danger">Technology</button>
-                    <button class="btn btn-secondary">Web Development</button>
-                    <button class="btn btn-success">Tech Fun</button>
+                    <button class="btn btn-danger">Projects</button>
+                    <button class="btn btn-secondary">Get ready with your website</button>
+                    <button class="btn btn-success">Tech News</button>
 
                 </div>
             </div>
@@ -75,9 +136,9 @@
 
                     <h2>Daily tech news</h2>
                     <p>Technology News, Development and Trends</p>
-                    <button class="btn btn-danger">Technology</button>
-                    <button class="btn btn-secondary">Web Development</button>
-                    <button class="btn btn-success">Tech Fun</button>
+                    <button class="btn btn-danger">Projects</button>
+                    <button class="btn btn-secondary">Get ready with your website</button>
+                    <button class="btn btn-success">Tech News</button>
 
                 </div>
             </div>
@@ -95,7 +156,7 @@
     </div>
 
     <div class="content max-width-1 m-auto my-2">
-        <div class="content-left">
+        <div class="content-left ">
             <h1>Our Events </h1>
             <h3> <a href="https://news.opensuse.org/2021/06/28/osa-cfp/" target="_blank" > Opensuse Asia Summit</a>
              </h1>
