@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
 :root{
     --main-bg-color: brown;
     --font1:'Baloo Bhaina 2', cursive;
     --font2:'Roboto', sans-serif;
+    --font3:'Wallpoet', cursive;
 }
 
 .font1{
@@ -28,6 +29,33 @@
 
     .font-color{
     background-color: black;
-    margin: 0px 350px;
+    margin: 0px 150px;
 
     }
+
+
+@media only screen and (max-width:1050px) {
+.content-right{
+    display: none;
+    /* background-color: aquamarine; */
+    
+}
+}   
+@media only screen and (max-width:1380px) and (min-width:750px){
+    .content{
+        height: 450px;
+        font-size: 15px;
+    }
+} 
+@media only screen and (max-width:795px) and (min-width:500px){
+    .content{
+        height: 500px;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:500px){
+    .content{
+        height: 580px;
+        font-size: 11px;
+    }
+}
